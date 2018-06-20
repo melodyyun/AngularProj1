@@ -1,7 +1,7 @@
 <!-- once data is returned we can use it in html -->
 
 <h1>Posts</h1>
-<ul>
+<ul [@listStagger]="posts$">
   <li *ngFor="let post of posts$">
     <a routerLink="">{{ post.title }}</a>
     <p>{{ post.body }}</p>
